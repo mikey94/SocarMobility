@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "597156302594",
+    "project_id": "socarmobile",
+    "storage_bucket": "socarmobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597156302594:android:e3f764e70cd96fe3f53c1b",
+        "android_client_info": {
+          "package_name": "com.socarapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597156302594-jaan0e43u4nsqt2qkc6dmlc1iu4qql8h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlKR6fd0A_FEvA9DGbR-Eg-S7IEpvJxsU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597156302594-jaan0e43u4nsqt2qkc6dmlc1iu4qql8h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "597156302594-gdcoa1ni9t7mkruqf18m8u6hc262c5ns.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.socarapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
