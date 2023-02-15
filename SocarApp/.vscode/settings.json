@@ -1,0 +1,10 @@
+{
+    "cSpell.words": [
+        "rneui",
+        "Socar"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+      },
+    "eslint.validate": ["javascript"]
+}
