@@ -43,8 +43,8 @@ function AddCar({ navigation }: addCarsProps) {
         description,
         activeStatus: false,
         isCompleted: false,
-        latitude: generateRandomCoordinates(1, 7, 3),
-        longitude: generateRandomCoordinates(100, 110, 3),
+        latitude: generateRandomCoordinates(2.8, 3.6, 3),
+        longitude: generateRandomCoordinates(101.3, 101.8, 3),
       };
       dispatch(addFleet(payload));
       navigation.navigate(Routes.CARS);

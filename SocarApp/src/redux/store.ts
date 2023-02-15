@@ -1,5 +1,5 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
-import { persistReducer } from 'redux-persist';
+import { persistReducer, persistStore } from 'redux-persist';
 import thunk from 'redux-thunk';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import fleetSlice from './fleet-slice/fleet-slice';
@@ -13,6 +13,11 @@ export const store = configureStore({
   devTools: true,
   middleware: [thunk],
 });
-
+export const persister = persistStore(store);
 export type AppDispatch = typeof store.dispatch;
 export type RootState = ReturnType<typeof store.dispatch>
+
+export function cleanReduxPersistData() {
+  persister.pause();
+  persister.flush().then(() => persister.purge());
+}

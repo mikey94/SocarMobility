@@ -13,18 +13,19 @@ function Home() {
       <MapView
         style={Styles.map}
         initialRegion={{
-          latitude: 4.2105,
-          longitude: 101.9758,
-          latitudeDelta: 0.09001,
-          longitudeDelta: 0.09001,
+          latitude: 3.205398,
+          longitude: 101.613664,
+          latitudeDelta: 0.10001,
+          longitudeDelta: 0.10001,
         }}
       >
         {
           fleetList.map((fleetItem: fleet) => (
             <Marker
-              key={fleetItem.id}
+              key={fleetItem.id.toString()}
               coordinate={{ latitude: fleetItem.latitude, longitude: fleetItem.longitude }}
               title={fleetItem.brand}
+              image={require('../../assets/icons/car.png')}
             />
           ))
         }
