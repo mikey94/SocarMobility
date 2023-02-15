@@ -49,10 +49,14 @@ const fleetSlice = createSlice({
       state.activeReservations = state.activeReservations.filter((item: any) => item.id !== id);
       state.completedReservations.push(data);
     },
+    applyCustomData: (state: IFleetState, action: {payload: Array<fleet>}) => {
+      state.fleetList.push(...action.payload);
+    },
+    clearData: () => INITIAL_STATE,
   },
 });
 
 export const {
-  addFleet, setSelectedItem, rentFleet, completeRent,
+  addFleet, setSelectedItem, rentFleet, completeRent, applyCustomData, clearData,
 } = fleetSlice.actions;
 export default fleetSlice.reducer;
